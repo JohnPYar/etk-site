@@ -6,11 +6,13 @@
 
 
 .header-top {
-  display: flex;
-  justify-content: space-between;
-  height: 53px;
-  align-items: center;
-  background: #FAFAFA;
+    background: #FAFAFA;
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 53px;
+  }
 }
 
 .header-top-menu{
@@ -46,6 +48,45 @@
   }
   &__mail{
     color: $header-menu-color;
+  }
+}
+
+.header-bottom{
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 76px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+  &__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__phone{
+    display: flex;
+
+  }
+  &__search{
+    display: flex;
+  }
+  &__button{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 44px;
+    border-radius: 4px;
+    border-bottom-width: 0;
+    background: #6FC5BA;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 32px;
+    color: #F4F4F4;
+  }
+  &__button-icon{
+    height: 14px;
   }
 }
 
