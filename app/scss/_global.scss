@@ -1,7 +1,10 @@
+@import 'vars';
+
 html,
 body {
 	height: 100%;
 	color: $default-color;
+	font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
