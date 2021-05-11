@@ -19,16 +19,18 @@
     width: 740px;
     align-items: center;
   }
+  &__list-link{
+    color: $header-menu-color;
+  }
 }
 
 .header-top-city{
   display: flex;
   justify-content: space-between;
-
   &__name{
     padding-left: 7px;
+    color: $default-color;
   }
-
   &__icon{
     align-self: flex-end;
   }
@@ -38,9 +40,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   &__mail{
     padding-left: 5px;
   }
+  &__mail{
+    color: $header-menu-color;
+  }
 }
+
+
 
