@@ -6,7 +6,7 @@
 
 
 .header-top {
-    background: #FAFAFA;
+    background: $main-grey;
   &__inner{
     display: flex;
     align-items: center;
@@ -64,11 +64,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 24px;
+    padding-bottom: 10px;
   }
   &__icon{
     padding: 0 17px;
+    &:first-of-type{
+      &::before{
+        top: 19px;
+      }
+    }
     &:last-of-type{
       padding-right: 0;
+      &::before{
+        top: 21px;
+      }
+    }
+    &::before{
+      content: "";
+      //width: 1px;
+      height: 37px;
+      border-left: 0.8px solid #F0F0F0;
+      position: relative;
+      top: 17px;
+      right: 17px;
     }
   }
   &__phone{
@@ -142,6 +161,49 @@
   }
   &__logo{
     height: 37px;
+  }
+}
+
+.footer{
+  background: $main-grey;
+
+  .footer-bottom{
+    background: #F3F3F3;
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text{
+      width: 354px;
+      font-size: 8.71972px;
+      line-height: 12px;
+      color: #9C9C9C;
+      margin-top: 26px;
+    }
+    &__form{
+      width: 560px;
+      height: 43px;
+      border: 2px solid #6FC5BA;
+      border-radius: 4px;
+      //padding: 23px 0 27px;
+      margin: 23px 0 27px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__input{
+      width: 100%;
+      color: #C5C5C5;
+      font-size: 12px;
+      padding-left: 22px;
+      background: #F3F3F3;
+    }
+    &__button{
+      width: 135px;
+      background: $header-green;
+      border-radius: 2px 0 0 2px;
+      color: $white;
+      font-size: 12px;
+    }
   }
 }
 
