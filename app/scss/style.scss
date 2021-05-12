@@ -191,10 +191,38 @@
   background: $main-grey;
 
   .footer-top {
-
+    padding-top: 45px;
     &__inner {
-    display: flex;
-    justify-content: space-around;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__left,
+    &__right{
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__social{
+      display: flex;
+      flex-direction: column;
+    }
+    &__social-logo{
+      width: 88px;
+      height: 88px;
+      margin-bottom: 29px;
+    }
+    &__social-list{
+      display: flex;
+      margin-top: 14px;
+      margin-bottom: 57px;
+    }
+    &__social-item{
+      margin-right: 14px;
+    }
+    &__copyright{
+      font-size: 11.7757px;
+      line-height: 17px;
+      color: #A0A0A0;
     }
   }
 
