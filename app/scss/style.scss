@@ -207,6 +207,16 @@
       line-height: 17px;
       color: #A0A0A0;
     }
+    &__about-title{
+      margin-bottom: 13px;
+    }
+    &__about-item{
+      @extend %footer-text;
+      margin-bottom: 13px;
+    }
+    &__about-link{
+      color: $footer-grey;
+    }
   }
 
   .footer-bottom {

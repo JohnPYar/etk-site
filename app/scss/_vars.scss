@@ -2,5 +2,11 @@ $default-color: #000000;
 $header-font-grey: #9A9A9A;
 $header-green: #6FC5BA;
 $main-grey: #FAFAFA;
+$footer-grey: #606060;
 $white: #FFFFFF;
+
+%footer-text{
+  font-size: 16px;
+  line-height: 25.65px;
+}
 
