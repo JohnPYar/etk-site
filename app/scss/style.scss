@@ -90,7 +90,7 @@
       height: 37px;
       border-left: 0.8px solid #F0F0F0;
       position: relative;
-      top: 10px;
+      //top: 10px;
       right: 17px;
     }
   }
@@ -173,7 +173,40 @@
 
 .main{
 
+  .left-sidebar{
+    width: 270px;
+    &__menu{
+      background: #FAFAFA;
+      border-radius: 5px;
+      padding-top: 18px;
+    }
+    &__menu-list{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 643px;
+      padding-bottom: 70px;
+      border-bottom: 1px solid #F0F0F0;
+    }
+    &__menu-item{
+      //margin-bottom: 20px;
+      &:last-of-type .left-sidebar__menu-link{
+        color: #FE0000;
+      }
+    }
+    &__menu-link{
+      display: flex;
+      font-size: 14px;
+      line-height: 17px;
+      color: $default-color;
+      padding-left: 15px;
+    }
+    &__menu-icon{
+      margin-right: 15px;
+    }
+  }
 }
+
 .footer {
   background: $main-grey;
 
