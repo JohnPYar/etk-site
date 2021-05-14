@@ -179,6 +179,7 @@
       background: $main-grey;
       border-radius: 5px;
       padding-top: 18px;
+      margin-bottom: 32px;
     }
     &__menu-list{
       display: flex;
@@ -203,6 +204,7 @@
     }
     &__menu-icon{
       margin-right: 15px;
+      height: 22px;
     }
     &__menu-full{
       display: flex;
@@ -211,6 +213,33 @@
       font-size: 14px;
       line-height: 17px;
       height: 61px;
+      &--underline{
+        text-decoration: underline;
+        height: auto;
+        padding: 15px 22px 18px;
+      }
+    }
+    &__certificates{
+      //padding: 22px 20px 19px;
+      background: $main-grey;
+      border-radius: 4px;
+    }
+    &__certificates-header{
+      font-size: 16.6279px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      padding: 22px 20px 0;
+    }
+    &__certificates-images{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px 33px;
+      border-bottom: 1px solid #F0F0F0;
+
+    }
+    &__certificates-image{
+      width: 112px;
+      height: 157px;
     }
   }
 }
