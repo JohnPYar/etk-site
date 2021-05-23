@@ -52,4 +52,18 @@ select {
 
 a{
   text-decoration: none;
+  transition: 0.3s;
+  &:hover{
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+}
+
+button{
+  transition: 0.3s;
+  &:hover{
+    transition: 0.3s;
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }

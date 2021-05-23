@@ -52,12 +52,14 @@ function scripts() {
 
 function styles() {
   return src('app/scss/style.scss')
-      .pipe(scss({outputStyle: 'compressed'}))
-      .pipe(concat('style.min.css'))
-      .pipe(autoprefixer({
-        overrideBrowserslist: ['last 10 version'],
-        grid: true
-      }))
+      // .pipe(scss({outputStyle: 'compressed'}))
+      .pipe(scss({outputStyle: 'nested'}))
+      // .pipe(concat('style.min.css'))
+      .pipe(concat('style.css'))
+      // .pipe(autoprefixer({
+      //   overrideBrowserslist: ['last 10 version'],
+      //   grid: true
+      // }))
       .pipe(dest('app/css'))
       .pipe(browserSync.stream())
 }

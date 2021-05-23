@@ -355,6 +355,30 @@
       margin-bottom: 45px;
     }
 
+    .liked{
+      .products{
+        &__header{
+          display: flex;
+          justify-content: space-between;
+          height: 40px;
+        }
+        &__all-link{
+          align-self: flex-end;
+          font-size: 15px;
+          line-height: 24px;
+          color: #737373;
+        }
+        &__list{
+          display: flex;
+          justify-content: space-between;
+        }
+        &__image{
+          width: 270px;
+          height: 268px;
+          border-radius: 6px;
+        }
+      }
+    }
   }
 }
 
