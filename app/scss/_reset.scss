@@ -51,7 +51,7 @@ select {
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
   transition: 0.3s;
   &:hover{
     transition: 0.3s;

@@ -48,7 +48,7 @@ select {
   border: none; }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   transition: 0.3s; }
   a:hover {
     transition: 0.3s;
@@ -336,22 +336,48 @@ h6 {
     height: 335px;
     background: #FAFAFA;
     margin-bottom: 45px; }
-  .main .main-content .liked .products__header {
-    display: flex;
-    justify-content: space-between;
-    height: 40px; }
-  .main .main-content .liked .products__all-link {
-    align-self: flex-end;
-    font-size: 15px;
-    line-height: 24px;
-    color: #737373; }
-  .main .main-content .liked .products__list {
-    display: flex;
-    justify-content: space-between; }
-  .main .main-content .liked .products__image {
-    width: 270px;
-    height: 268px;
-    border-radius: 6px; }
+  .main .main-content .liked {
+    margin-bottom: 70px; }
+    .main .main-content .liked .products__header {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      margin-bottom: 17px; }
+    .main .main-content .liked .products__all-link {
+      align-self: flex-end;
+      font-size: 15px;
+      line-height: 24px;
+      color: #737373; }
+    .main .main-content .liked .products__list {
+      display: flex;
+      justify-content: space-between; }
+    .main .main-content .liked .products__item {
+      width: 270px; }
+    .main .main-content .liked .products__image {
+      width: 270px;
+      height: 268px;
+      border-radius: 6px;
+      margin-bottom: 32px; }
+    .main .main-content .liked .products__price {
+      font-size: 22px;
+      line-height: 27px;
+      font-weight: 700;
+      margin-bottom: 5px; }
+    .main .main-content .liked .products__text {
+      font-size: 18px;
+      line-height: 29px;
+      width: 85%;
+      margin-bottom: 40px; }
+      .main .main-content .liked .products__text a {
+        color: #000000; }
+    .main .main-content .liked .products__button {
+      width: 118px;
+      height: 41px;
+      border-radius: 4px;
+      background-color: #6FC5BA;
+      color: #FFFFFF;
+      font-size: 15px;
+      line-height: 19px; }
 
 .footer {
   background: #FAFAFA; }
@@ -372,7 +398,7 @@ h6 {
       flex-direction: column;
       margin-right: 20px; }
     .footer .footer-top__social-logo {
-      width: 88px;
+      width: 140px;
       height: 88px;
       margin-bottom: 29px; }
     .footer .footer-top__social-list {

@@ -356,11 +356,13 @@
     }
 
     .liked{
+      margin-bottom: 70px;
       .products{
         &__header{
           display: flex;
           justify-content: space-between;
           height: 40px;
+          margin-bottom: 17px;
         }
         &__all-link{
           align-self: flex-end;
@@ -372,10 +374,38 @@
           display: flex;
           justify-content: space-between;
         }
+        &__item{
+          width: 270px;
+        }
         &__image{
           width: 270px;
           height: 268px;
           border-radius: 6px;
+          margin-bottom: 32px;
+        }
+        &__price{
+          font-size: 22px;
+          line-height: 27px;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+        &__text{
+          font-size: 18px;
+          line-height: 29px;
+          width: 85%;
+          margin-bottom: 40px;
+        & a{
+          color: $default-color;
+        }
+        }
+        &__button{
+          width: 118px;
+          height: 41px;
+          border-radius: 4px;
+          background-color: $header-green;
+          color: $white;
+          font-size: 15px;
+          line-height: 19px;
         }
       }
     }
@@ -414,7 +444,8 @@
     }
 
     &__social-logo {
-      width: 88px;
+      //width: 88px;
+      width: 140px;
       height: 88px;
       margin-bottom: 29px;
     }
