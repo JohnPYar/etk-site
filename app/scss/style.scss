@@ -220,6 +220,11 @@
       }
 
       &__item {
+        position: relative;
+        &:hover>.sidebar-menu__dropdown{
+          transition: 0.5s;
+          display: block;
+        }
         //margin-bottom: 20px;
         &:last-of-type .sidebar-menu__link {
           color: #FE0000;
@@ -231,6 +236,30 @@
         line-height: 17px;
         display: flex;
         padding-left: 15px;
+        color: $default-color;
+      }
+
+      &__dropdown{
+        position: absolute;
+        right: -270px;
+        //top: 0;
+        top: -18px;
+        width: 270px;
+        padding-left: 30px;
+        padding-top: 15px;
+        background: $main-grey;
+        z-index: 99;
+        transition: 0.5s;
+        display: none;
+      }
+
+      &__dropdown-item{
+        margin-bottom: 21px;
+      }
+
+      &__dropdown-link{
+        font-size: 14px;
+        line-height: 17px;
         color: $default-color;
       }
 

@@ -253,13 +253,35 @@ h6 {
       height: 643px;
       padding-bottom: 70px;
       border-bottom: 1px solid #F0F0F0; }
-    .main .left-sidebar .sidebar-menu__item:last-of-type .sidebar-menu__link {
-      color: #FE0000; }
+    .main .left-sidebar .sidebar-menu__item {
+      position: relative; }
+      .main .left-sidebar .sidebar-menu__item:hover > .sidebar-menu__dropdown {
+        transition: 0.5s;
+        display: block; }
+      .main .left-sidebar .sidebar-menu__item:last-of-type .sidebar-menu__link {
+        color: #FE0000; }
     .main .left-sidebar .sidebar-menu__link {
       font-size: 14px;
       line-height: 17px;
       display: flex;
       padding-left: 15px;
+      color: #000000; }
+    .main .left-sidebar .sidebar-menu__dropdown {
+      position: absolute;
+      right: -270px;
+      top: -18px;
+      width: 270px;
+      padding-left: 30px;
+      padding-top: 15px;
+      background: #FAFAFA;
+      z-index: 99;
+      transition: 0.5s;
+      display: none; }
+    .main .left-sidebar .sidebar-menu__dropdown-item {
+      margin-bottom: 21px; }
+    .main .left-sidebar .sidebar-menu__dropdown-link {
+      font-size: 14px;
+      line-height: 17px;
       color: #000000; }
     .main .left-sidebar .sidebar-menu__icon {
       height: 22px;
