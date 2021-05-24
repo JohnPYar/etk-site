@@ -4,6 +4,13 @@
 @import 'libs';
 @import 'global';
 
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
 .header-top {
   background: $main-grey;
 
@@ -59,6 +66,7 @@
     align-items: center;
     justify-content: space-between;
     height: 76px;
+    background: $white;
     //padding-top: 16px;
     //padding-bottom: 17px;
   }
@@ -190,6 +198,7 @@
   &__inner{
     display: flex;
     justify-content: space-between;
+    margin-top: 129px;
   }
 
   .left-sidebar {
@@ -393,6 +402,8 @@
           font-size: 18px;
           line-height: 29px;
           width: 85%;
+          max-height: 55px;
+          overflow: hidden;
           margin-bottom: 40px;
         & a{
           color: $default-color;

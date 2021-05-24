@@ -96,6 +96,13 @@ h6 {
   font-size: 18px;
   line-height: 29px; }
 
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100; }
+
 .header-top {
   background: #FAFAFA; }
   .header-top__inner {
@@ -134,7 +141,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px; }
+  height: 76px;
+  background: #FFFFFF; }
 
 .header-bottom__icons {
   display: flex;
@@ -228,7 +236,8 @@ h6 {
 
 .main__inner {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 129px; }
 
 .main .left-sidebar {
   width: 270px; }
@@ -367,6 +376,8 @@ h6 {
       font-size: 18px;
       line-height: 29px;
       width: 85%;
+      max-height: 55px;
+      overflow: hidden;
       margin-bottom: 40px; }
       .main .main-content .liked .products__text a {
         color: #000000; }
